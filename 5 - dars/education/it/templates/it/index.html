@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bosh Sahifa</title>
+</head>
+<body>
+
+<h1>Barcha Kursalar</h1>
+
+{% for courses in course %}
+
+<div>
+    <ul>
+        <li>
+            <h3>Course Name: {{ courses.name }}</h3>
+            <h3>Price: {{ courses.price }}</h3>
+            <h3>Davomiligi: {{ courses.duration }}</h3>
+            <hr>
+        </li>
+    </ul>
+</div>
+
+{% endfor %}
+<hr>
+<hr>
+
+
+<h1>Barcha URL lar</h1>
+
+<div>
+    <ul>
+        <li>
+            <h2>Course URL lar |<br>
+            Faqat Admin larga
+            </h2>
+            <h3>course-list/</h3>
+            <h3>course-update/pk/</h3>
+        </li>
+    </ul>
+</div>
+
+<hr>
+
+<div>
+    <ul>
+        <li>
+            <h2>Status URL lar |<br>
+            Faqat Admin larga
+            </h2>
+            <h3>status-list/</h3>
+            <h3>status-update/pk/</h3>
+        </li>
+    </ul>
+</div>
+
+<hr>
+
+<div>
+    <ul>
+        <li>
+            <h2>Experience URL lar |<br>
+            Authenticated Bo'lgan User larga
+            </h2>
+            <h3>experience-list/</h3>
+            <h3>experience-update/pk/</h3>
+        </li>
+    </ul>
+</div>
+
+<hr>
+
+<div>
+    <ul>
+        <li>
+            <h2>Teacher URL lar |<br>
+            Faqat Admin larga
+            </h2>
+            <h3>teacher-list/</h3>
+            <h3>teacher-update/pk/</h3>
+        </li>
+    </ul>
+</div>
+
+<hr>
+
+<div>
+    <ul>
+        <li>
+            <h2>Student URL lar | <br>
+            Authenticated Bo'lgan User larga
+            </h2>
+            <h3>student-list/</h3>
+            <h3>student-update/pk/</h3>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
